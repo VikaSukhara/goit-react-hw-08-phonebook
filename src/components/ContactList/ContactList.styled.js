@@ -46,6 +46,11 @@ export const Button = styled.button`
   background-color: white;
   cursor: pointer;
 
+
+  /* display: flex;
+  justify-content: space-between;
+   */
+
   &:hover,
   &:focus {
     background-color: black;
