@@ -6,7 +6,7 @@ import { Loader } from "../components/Loader";
 import { useEffect } from "react";
 import { fetchContacts } from "../components/redux/operations";
 
- const HomeContacts = () => {
+ const Contacts = () => {
     const dispatch = useDispatch();
     
     useEffect(() => {
@@ -29,4 +29,4 @@ import { fetchContacts } from "../components/redux/operations";
 };
 
 
-export default HomeContacts
+export default Contacts

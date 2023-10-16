@@ -15,7 +15,7 @@ export const AppBar = () => {
   );
 };
 //AuthNav - register/logIn 
-//UserMenu - welcome Vika
+//UserMenu - welcome Vika + Log Out
 //Home - this nav doesn't change, but inner page's text shold change
 
 

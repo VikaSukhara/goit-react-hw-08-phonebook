@@ -3,7 +3,7 @@ import { useAuth } from '../Hooks/useAuth';
 import { fetchLogOut } from './redux/auth/authOperation';
 export const UserMenu = () => {
   const dispatch = useDispatch();
-  const  user  = useAuth();
+  const  {user}  = useAuth();
   // console.log('auth', user)
   //треба нейм, але чого лог ин, якщо не реэеструвались
 
@@ -19,3 +19,14 @@ export const UserMenu = () => {
     </div>
   );
 };
+
+
+
+//vika
+//vika13@gmail.com
+//Vika1972!Vika1972!
+
+
+//Viktoriia
+//viktoriia13@gmail.com
+//Viktoriia1972!Viktoriia1972!

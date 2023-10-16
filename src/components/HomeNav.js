@@ -1,6 +1,8 @@
+import { useAuth } from 'Hooks/useAuth';
 import { Link } from 'react-router-dom';
 
 export const HomeNav = () => {
+  const {isLoggedIn} = useAuth()
   return (
     <div>
       <nav
@@ -11,6 +13,7 @@ export const HomeNav = () => {
         }}
       >
         <Link to="/">Home</Link>
+        {isLoggedIn && <Link to="/contacts">Contacts</Link>}
       </nav>
     </div>
   );

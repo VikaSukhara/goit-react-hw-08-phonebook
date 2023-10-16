@@ -10,10 +10,11 @@ export const ContactList = () => {
   return (
     <List>
       {filteredUsers.map(contact => {
+        console.log(contact)
         return (
           <Item key={contact.id}>
             <Paragraph>
-              {contact.name} : {contact.phone}
+              {contact.name} : {contact.number}
             </Paragraph>
             <Button
               type="button"
