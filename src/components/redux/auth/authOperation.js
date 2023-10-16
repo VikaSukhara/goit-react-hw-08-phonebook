@@ -17,10 +17,14 @@ export const fetchRegister = createAsyncThunk(
   'auth/register',
   async (credentials, thunkAPI) => {
     try {
+      console.log("success fetch register")
+      console.log("credentials", credentials)
       const response = await axios.post('/users/signup', credentials);
+
       setAuthHeader(response.data.token);
       return response.data;
     } catch (error) {
+      console.log("fail fetch register")
       return thunkAPI.rejectWithValue(error.message);
     }
   }
@@ -43,14 +47,13 @@ export const fetchLogIn = createAsyncThunk(
 export const fetchCurrent = createAsyncThunk(
   'auth/current',
   async (_, thunkAPI) => {
-    const { token } = thunkAPI.getState().auth;
-    if (!token) {
-      console.log('whats the hell');
-      return;
+    const state = thunkAPI.getState();
+    const savededToken = state.auth.token;
+    if (savededToken === null) {
+      return thunkAPI.rejectWithValue('Please Log in or Sign up');
     }
-    console.log('wanna peradise');
-    setAuthHeader(token);
     try {
+      setAuthHeader(savededToken);
       const response = await axios.get('auth/current');
       return response.data;
     } catch (error) {

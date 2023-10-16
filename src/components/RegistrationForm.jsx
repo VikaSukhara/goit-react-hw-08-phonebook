@@ -3,6 +3,7 @@ import { fetchRegister } from 'components/redux/auth/authOperation';
 
 export const RegistrationForm = () => {
   const dispatch = useDispatch();
+
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.currentTarget;
