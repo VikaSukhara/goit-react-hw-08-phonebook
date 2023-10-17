@@ -1,8 +1,9 @@
+import { HomeComponent } from "components/HomeComponent";
+
 const Home = () => {
   return (
     <div>
-      <h1>Welcome to the phone book</h1>
-      <p>Register or Log in to use the phone book</p>
+     <HomeComponent/>
     </div>
   );
 };

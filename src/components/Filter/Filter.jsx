@@ -10,13 +10,14 @@ export const Filter = () => {
 
   return (
     <div>
-      <p
+      <h3
         style={{
           fontSize: '18px',
+          marginBottom: '10px'
         }}
       >
         Find contact by name
-      </p>
+      </h3>
       <input
         type="text"
         onChange={findUser}

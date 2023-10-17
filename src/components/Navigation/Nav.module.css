@@ -1,0 +1,51 @@
+.appBarNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 30px 50px 30px;
+}
+
+.homeNav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.userMenuWrap {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+}
+
+.title:active,
+.title:hover,
+.title:focus {
+  color: blue;
+}
+
+.welcome {
+  font-size: 25px;
+  font-weight: 14px;
+}
+
+.logOut {
+  font-size: 20px;
+  width: 100px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.logOut:hover,
+.logOut:focus {
+  background-color: black;
+  color: white;
+}

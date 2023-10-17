@@ -1,4 +1,4 @@
-import { RegistrationForm } from 'components/RegistrationForm';
+import { RegistrationForm } from 'components/authorization/RegistrationForm';
 // import { fetchRegister } from 'components/redux/auth/authOperation';
 // import { useDispatch, useSelector } from 'react-redux';
 // import { addContact } from 'components/redux/operations';

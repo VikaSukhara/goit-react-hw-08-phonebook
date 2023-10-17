@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import css from './Nav.module.css'
 
 export const AuthNav = () => {
 
@@ -10,8 +11,8 @@ export const AuthNav = () => {
         gap: '20px',
       }}
     >
-      <Link to="/registration">Registration</Link>
-      <Link to="/login">LogIn</Link>
+      <Link to="/registration" ><h2 className={css.title}>Registration</h2></Link>
+      <Link to="/login"><h2 className={css.title}>LogIn</h2></Link>
     </nav>
   );
 };
