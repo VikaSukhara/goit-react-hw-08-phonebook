@@ -10,7 +10,6 @@ export const ContactList = () => {
   return (
     <List>
       {filteredUsers.map(contact => {
-        console.log(contact)
         return (
           <Item key={contact.id}>
             <Paragraph>
