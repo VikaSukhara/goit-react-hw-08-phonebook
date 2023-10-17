@@ -11,8 +11,8 @@ export const AuthNav = () => {
         gap: '20px',
       }}
     >
-      <Link to="/registration" ><h2 className={css.title}>Registration</h2></Link>
-      <Link to="/login"><h2 className={css.title}>LogIn</h2></Link>
+      <Link to="/registration" className={css.title}>Registration</Link>
+      <Link to="/login" className={css.title}>LogIn</Link>
     </nav>
   );
 };

@@ -9,8 +9,8 @@ export const HomeNav = () => {
       <div className={css.homeNav}
 
       >
-        <Link to="/"><h2 className={css.title}>Home</h2></Link>
-        {isLoggedIn && <Link to="/contacts"><h2 className={css.title}>Contacts</h2></Link>}
+        <Link to="/" className={css.title}>Home</Link>
+        {isLoggedIn && <Link to="/contacts" className={css.title}>Contacts</Link>}
       </div>
     </div>
   );
